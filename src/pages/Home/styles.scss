@@ -1,26 +1,68 @@
-.main {
-    display: grid;
-    grid-template-areas: 
-    "head head head"
-    "side content nav"
-    "foot foot foot";
-    grid-template-rows: 50px 100% 50px;
-    justify-content: space-between;
-    justify-items: center;
-    align-items: center;
-}
-header {
-    grid-area: head;
-}
-article {
-    grid-area: content;
-}
-aside {
-    grid-area: side;
-}
-footer {
-    grid-area: foot;
-}
-nav {
-    grid-area: nav;
+@import '../../styles/variables.scss';
+
+main {
+    display: flex;
+    flex-direction: row;
+    
+    header, footer {
+        height: 20vh;
+    }
+
+    footer {
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        .footer {
+            font-family: 'Mukta';
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: $green;
+        }
+    }
+
+    section {
+        width: 25vw;
+    }
+
+    article {
+        display: flex;
+        align-items: center;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .content {
+        width: 1092px;
+        height: 631px;
+        background-color: $white;
+        border-radius: 5px;
+        .box {
+            display: flex;
+            flex-direction: column;
+
+            .box-header {
+                border-radius: 5px 5px 0 0;
+                height: 13px;
+                background-color: $dark-green;
+            }
+
+            .box-content{
+                display: flex;
+                justify-content: space-between;
+                height: 560px;
+                .left-box-content, .right-box-content {
+                    width: 338px;
+                }
+                .center-box-content {
+                    width: 416px;
+                }
+            }
+        }
+    }
+
 }
