@@ -62,6 +62,39 @@ main {
                     width: 416px;
                 }
             }
+
+            .box-nav {
+                display: flex;
+                height: 58px;
+                align-items: center;
+                justify-content: center;
+                border-top: 1px solid $icy-white;
+                gap: 15px;
+
+                .box-nav-button {
+                    width: 125px;
+                    height: 40px;
+                    color: $icy-white;
+                    text-transform: lowercase;
+                    border: none;
+                    background-color: $brown;
+                    border-radius: 5px;
+
+                    span {
+                        font-family: 'Open Sans', sans-serif;
+                        font-weight: 400;
+                        font-size: 16px;
+                    }
+
+                    &:hover {
+                        background-color: $white;
+                        border: 1px solid $brown;
+                        color: $brown;
+                        transition: ease 0.5s;
+                        font-weight: bold;
+                    }
+                }
+            }
         }
     }
 

@@ -21,7 +21,17 @@ export function Home() {
                 <div className="center-box-content">center</div>
                 <div className="right-box-content">right</div>
               </div>
-              <div className="box-nav">nav</div>
+              <div className="box-nav">
+                <button className="box-nav-button">
+                  <span>link</span>
+                </button>
+                <button className="box-nav-button">
+                  <span>link</span>
+                </button>
+                <button className="box-nav-button">
+                  <span>link</span>
+                </button>
+              </div>
             </div>
           </div>
         </article>
