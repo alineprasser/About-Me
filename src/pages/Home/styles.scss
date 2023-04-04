@@ -55,11 +55,61 @@ main {
                 display: flex;
                 justify-content: space-between;
                 height: 560px;
+
                 .left-box-content, .right-box-content {
+                    display: flex;
+                    flex-direction: column;
                     width: 338px;
+                    align-items: center;
                 }
+
                 .center-box-content {
                     width: 416px;
+                }
+
+                .left-box-content {
+                    font-family: 'Cormorant Garamond';
+                    font-style: normal;
+                    font-weight: 400;
+                    color: $black;
+                    gap: 30px;
+                    margin-top: 3em;
+                    
+                    .left-box-content-text {
+                        margin: 0 30px;
+                        display: flex;
+                        gap: 20px;
+                        flex-direction: column;
+
+                        h1 {
+                            font-weight: 700;
+                            font-size: 22px;
+                        }
+    
+                        span {
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: $pink;
+                            margin-left: 5px;
+                        }
+    
+                        p {
+                            font-family: 'Open Sans', sans-serif;
+                            font-size: 14px;
+                            strong {
+                                color: $light-green;
+                            }
+    
+                        }
+                    }
+
+
+                    .profile-img {
+                        width: 167px;
+                        height: 228px;
+                        border-radius: 5px;
+                        object-fit: cover;
+                    }
                 }
             }
 
