@@ -61,12 +61,12 @@ main {
                 .left-box-content, .right-box-content {
                     display: flex;
                     flex-direction: column;
-                    width: 338px;
+                    max-width: 338px;
                     align-items: center;
                 }
 
                 .center-box-content {
-                    width: 416px;
+                    max-width: 400px;
                     margin-top: 3em;
                     font-family: 'Open Sans', sans-serif;
                     display: flex;
@@ -148,6 +148,7 @@ main {
 
                 .right-box-content {
                     margin-top: 3em;
+                    padding: 0 20px;
                     .travel-img {
                         width: 295px;
                         height: 458px;
@@ -186,8 +187,10 @@ main {
                         color: $brown;
                         transition: ease 0.5s;
                         font-weight: bold;
+                        cursor: pointer;
                     }
                 }
+
             }
         }
     }

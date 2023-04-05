@@ -1,4 +1,7 @@
 import "./styles.scss";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 export function Home() {
   return (
@@ -63,15 +66,32 @@ export function Home() {
                 </div>
               </div>
               <div className="box-nav">
-                <button className="box-nav-button">
-                  <span>link</span>
-                </button>
-                <button className="box-nav-button">
-                  <span>link</span>
-                </button>
-                <button className="box-nav-button">
-                  <span>link</span>
-                </button>
+                <a
+                  href="https://www.linkedin.com/in/aline-bravin-prasser/"
+                  target="_blank"
+                >
+                  <button className="box-nav-button">
+                    <span>LinkedIn</span>
+                  </button>
+                </a>
+                <a href="https://www.behance.net/alineprasser" target="_blank">
+                  <button className="box-nav-button">
+                    <span>Behance</span>
+                  </button>
+                </a>
+                <a href="https://github.com/alineprasser" target="_blank">
+                  <button className="box-nav-button">
+                    <span>GitHub</span>
+                  </button>
+                </a>
+                <a
+                  href="https://www.instagram.com/alineprasser/"
+                  target="_blank"
+                >
+                  <button className="box-nav-button">
+                    <span>Instagram</span>
+                  </button>
+                </a>
               </div>
             </div>
           </div>
