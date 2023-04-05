@@ -30,12 +30,37 @@ export function Home() {
                       Desenvolvedora <strong>Front-End</strong> e{" "}
                       <strong>UX/UI</strong> Designer há cerca de três anos e
                       encantada por realizar projetos que impactam positivamente
-                      na vida das pessoas! ✨💖
+                      na vida das pessoas! ✨
                     </p>
                   </div>
                 </div>
-                <div className="center-box-content">center</div>
-                <div className="right-box-content">right</div>
+                <div className="center-box-content">
+                  <h1>Sobre</h1>
+                  <p>
+                    Imersa no mundo da computação desde 2016 e em constante
+                    aprendizado! Atualmente focada em Desenvolvimento Web,
+                    utilizando <strong>ReactJS</strong>, <strong>VueJS</strong>{" "}
+                    e <strong>TypeScript</strong>. Também tenho bagagem com
+                    administração de dados com <strong>SQL</strong> e sua
+                    posterior análise utilizando <strong>Power BI</strong>.
+                  </p>
+                  <p>
+                    Desde bem nova me interesso por tecnologia! hoje sou Técnica
+                    em informática e futura Bacharel em Sistemas de Informação.
+                  </p>
+                  <p>
+                    Costumava recriar algumas páginas por lazer a fim de
+                    explorar o <strong>Figma</strong> e desde então venho
+                    mantendo esse hobby aceso, mas agora buscando trazer designs
+                    únicos e especiais para mim! 💖
+                  </p>
+                </div>
+                <div className="right-box-content">
+                  <img
+                    className="travel-img"
+                    src="src\assets\images\travel-1.jpg"
+                  />
+                </div>
               </div>
               <div className="box-nav">
                 <button className="box-nav-button">
@@ -53,7 +78,9 @@ export function Home() {
         </article>
 
         <footer>
-          <div className="footer">Aline Bravin Prasser • 2023</div>
+          <div>
+            <span>Aline Prasser • 2023</span>
+          </div>
         </footer>
       </div>
 
