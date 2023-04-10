@@ -50,8 +50,8 @@ export function Home() {
                     posterior análise utilizando <strong>Power BI</strong>.
                   </p>
                   <p>
-                    Desde bem nova me interesso por tecnologia! hoje sou Técnica
-                    em informática e futura Bacharel em Sistemas de Informação.
+                    Desde bem nova me interesso por tecnologia! Hoje sou Técnica
+                    em Informática e futura Bacharel em Sistemas de Informação.
                   </p>
                   <p>
                     Costumava recriar algumas páginas por lazer a fim de
