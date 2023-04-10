@@ -26,10 +26,7 @@ export function Home() {
               <div className="box-header"></div>
               <div className="box-content">
                 <div className="left-box-content">
-                  <img
-                    className="profile-img"
-                    src="src\assets\images\profile.jpg"
-                  />
+                  <img className="profile-img" src="/profile.jpg" />
                   <div className="left-box-content-text">
                     <h1>
                       Olá, sou a Aline!<span>ela/dela</span>
@@ -64,10 +61,7 @@ export function Home() {
                   </p>
                 </div>
                 <div className="right-box-content">
-                  <img
-                    className="travel-img"
-                    src="src\assets\images\travel-1.jpg"
-                  />
+                  <img className="travel-img" src="/travel-1.jpg" />
                 </div>
               </div>
               <div className="box-nav">
