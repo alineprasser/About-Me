@@ -1,7 +1,8 @@
 import "./styles.scss";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { ReactComponent as LinkedinIcon } from "../../assets/images/icons/linkedin.svg";
+import { ReactComponent as BehanceIcon } from "../../assets/images/icons/behance.svg";
+import { ReactComponent as GithubIcon } from "../../assets/images/icons/github.svg";
+import { ReactComponent as InstagramIcon } from "../../assets/images/icons/instagram.svg";
 
 export function Home() {
   return (
@@ -70,17 +71,20 @@ export function Home() {
                   href="https://www.linkedin.com/in/aline-bravin-prasser/"
                   target="_blank"
                 >
-                  <button className="box-nav-button">
+                  <button className="box-nav-button from-left">
+                    <LinkedinIcon />
                     <span>LinkedIn</span>
                   </button>
                 </a>
                 <a href="https://www.behance.net/alineprasser" target="_blank">
                   <button className="box-nav-button">
+                    <BehanceIcon />
                     <span>Behance</span>
                   </button>
                 </a>
                 <a href="https://github.com/alineprasser" target="_blank">
                   <button className="box-nav-button">
+                    <GithubIcon />
                     <span>GitHub</span>
                   </button>
                 </a>
@@ -89,6 +93,7 @@ export function Home() {
                   target="_blank"
                 >
                   <button className="box-nav-button">
+                    <InstagramIcon />
                     <span>Instagram</span>
                   </button>
                 </a>
