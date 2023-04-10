@@ -1,7 +1,11 @@
 import "./styles.scss";
+// @ts-ignore
 import { ReactComponent as LinkedinIcon } from "../../assets/images/icons/linkedin.svg";
+// @ts-ignore
 import { ReactComponent as BehanceIcon } from "../../assets/images/icons/behance.svg";
+// @ts-ignore
 import { ReactComponent as GithubIcon } from "../../assets/images/icons/github.svg";
+// @ts-ignore
 import { ReactComponent as InstagramIcon } from "../../assets/images/icons/instagram.svg";
 
 export function Home() {
