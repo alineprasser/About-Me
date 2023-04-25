@@ -1,0 +1,235 @@
+@import '../../styles/variables.scss';
+
+main {
+    display: flex;
+    flex-direction: row;
+    
+    header, footer {
+        height: 20vh;
+    }
+
+    footer {
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        span {
+            font-family: 'Mukta';
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: $green;
+            font-size: 16px;
+        }
+    }
+
+    section {
+        width: 25vw;
+    }
+
+    article {
+        display: flex;
+        align-items: center;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .content {
+        max-width: 1480px;
+        min-height: 631px;
+        background-color: $white;
+        border-radius: 5px;
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            .box-header {
+                border-radius: 5px 5px 0 0;
+                height: 13px;
+                background-color: $dark-green;
+            }
+
+            .box-content{
+                display: flex;
+                justify-content: center;
+                line-height: 190%;
+                flex-grow: 1;
+                flex-wrap: wrap;
+                gap: 20px;
+                margin: 4em 2em 2em;
+
+                .left-box-content, .right-box-content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .center-box-content {
+                    font-family: 'Open Sans', sans-serif;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    overflow: auto;
+                    flex-basis: 400px;
+                    flex-grow: 1;
+
+                    &::-webkit-scrollbar {
+                        width: 3px;
+                    }
+                    &::-webkit-scrollbar-track {
+                        border-radius: 50px;
+                        background: $icy-white;
+                        margin: 1em 0;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        background: $pink;
+                        border-radius: 50px;
+                    }
+
+                    h1 {
+                        font-family: 'Cormorant Garamond';
+                    }
+
+                    p {
+                        font-size: 14px;
+                        strong {
+                            color: $light-green;
+                        }
+
+                    }
+                }
+
+                .left-box-content {
+                    font-family: 'Cormorant Garamond';
+                    font-style: normal;
+                    font-weight: 400;
+                    color: $black;
+                    gap: 30px;
+                    flex-basis: 300px;
+                    flex-grow: 1;
+                    
+                    .left-box-content-text {
+                        display: flex;
+                        gap: 20px;
+                        flex-direction: column;
+
+                        h1 {
+                            font-weight: 700;
+                            font-size: 22px;
+                        }
+    
+                        span {
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: $pink;
+                            margin-left: 5px;
+                        }
+    
+                        p {
+                            font-family: 'Open Sans', sans-serif;
+                            font-size: 14px;
+                            strong {
+                                color: $light-green;
+                            }
+    
+                        }
+                    }
+
+
+                    .profile-img {
+                        width: 167px;
+                        height: 228px;
+                        border-radius: 5px;
+                        object-fit: cover;
+                    }
+                }
+
+                .right-box-content {
+                    flex-basis: 300px;
+                    flex-grow: 1;
+
+                    .travel-img {
+                        width: 295px;
+                        height: 458px;
+                        border-radius: 5px;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            .box-nav {
+                display: flex;
+                height: 58px;
+                align-items: center;
+                justify-content: center;
+                border-top: 1px solid $icy-white;
+                gap: 15px;
+
+                .box-nav-button {
+                    height: 40px;
+                    text-transform: lowercase;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    padding: 10px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: $brown;
+                    border: none;
+                    cursor: pointer;
+                    position: relative;
+                    background-color: transparent;
+                    overflow: hidden;
+                    z-index: 1;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: $brown;
+                        color: $white;
+                        transform: translateX(-100%);
+                        transition: all .3s;
+                        z-index: -1;
+                    }
+                    
+                    &:hover::before {
+                        transform: translateX(0);
+                    }
+                    
+                    span {
+                        font-family: 'Open Sans', sans-serif;
+                        font-weight: 400;
+                        font-size: 16px;
+                    }
+
+                    svg {
+                        width: 12px;
+                        path {
+                            fill: $brown;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: $brown;
+                        color: $white;
+                        transition: ease 0.5s;
+                        path {
+                            fill: $white;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+}
